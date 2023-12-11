@@ -1,4 +1,4 @@
-const sheetId = '$sheet';
+const sheetId = '$sheetid';
 const base = `https://docs.google.com/spreadsheets/d/${sheetId}/gviz/tq?`;
 const sheetName = 'DASHBOARD';
 const query = encodeURIComponent('Select B, C, D, E') // Changed from 'Select *'
