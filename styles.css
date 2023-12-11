@@ -1,6 +1,7 @@
 body {
     background-color: #000000; /* Dark background */
     color: #ffffff; /* Light text */
+    text-align: center; /* Center the content horizontally */
 }
 
 h1 {
@@ -8,9 +9,9 @@ h1 {
 }
 
 table {
-    width: 100%;
+    width: 50vh;
     border-collapse: collapse;
-    align-items: center;
+    margin: 0 auto; /* Center the table horizontally */
 }
 
 table, th, td {
@@ -21,4 +22,9 @@ table, th, td {
 th, td {
     padding: 5px;
     text-align: center;
+}
+
+tr[data-crypto], tr[data-crypto2] {
+    background-color: #222222; 
+    color: #141414; 
 }
