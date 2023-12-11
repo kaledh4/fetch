@@ -13,12 +13,10 @@ function init() {
             //Remove additional text and extract only JSON:
             const jsonData = JSON.parse(rep.substring(47).slice(0, -2));
             console.log(rep)
-            const colz = [];
+            const colz = ["Symbol", "Risk", "Price", "Multiple"]; // Specific column names
             const tr = document.createElement('tr');
-            //Extract column labels
-            jsonData.table.cols.forEach((heading, index) => {
-                let column = heading.label || `Column ${index + 1}`; // Use a default label if the actual label is empty
-                colz.push(column);
+            //Create table headers
+            colz.forEach((column) => {
                 const th = document.createElement('th');
                 th.innerText = column;
                 tr.appendChild(th);
@@ -35,6 +33,7 @@ function init() {
             processRows(data);
         })
 }
+
 
 function processRows(json) {
     json.forEach((row, rowIndex) => {
