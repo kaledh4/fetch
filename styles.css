@@ -1,0 +1,24 @@
+body {
+    background-color: #000000; /* Dark background */
+    color: #ffffff; /* Light text */
+}
+
+h1 {
+    color: #ffffff; /* Light text */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    align-items: center;
+}
+
+table, th, td {
+    border: 5px solid #1a1a1a; /* Light border */
+    color: #b6b6b6; /* Light text */
+}
+
+th, td {
+    padding: 5px;
+    text-align: center;
+}
